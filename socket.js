@@ -4,7 +4,8 @@ module.exports = {
   init: (httpServer) => {
     io = require("socket.io")(httpServer, {
       cors: {
-        origin: "https://localhost:3000",
+        origin:
+          "https://65bb565dd126114fdb7733b7--velvety-meringue-2cfa3e.netlify.app",
         credentials: true,
         methods: ["GET, POST, PUT, DELETE, OPTIONS, HEAD"],
         allowedHeaders: "Content-Type,Authorization"
