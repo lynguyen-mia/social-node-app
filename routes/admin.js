@@ -23,6 +23,8 @@ router.post(
   adminController.createPost
 );
 
+router.get("/", adminController.fetchPosts);
+
 router.get("/fetch-posts", adminController.fetchPosts);
 
 router.get("/fetch-post/:prodId", adminController.fetchPost);
