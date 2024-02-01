@@ -60,7 +60,7 @@ const app = express();
 app.use(
   cors({
     origin:
-      "https://65bb565dd126114fdb7733b7--velvety-meringue-2cfa3e.netlify.app",
+      "https://65bb659e7810d70009c54afd--velvety-meringue-2cfa3e.netlify.app",
     credentials: true,
     methods: ["GET, POST, PUT, DELETE, OPTIONS, HEAD"],
     allowedHeaders: "Content-Type,Authorization"
