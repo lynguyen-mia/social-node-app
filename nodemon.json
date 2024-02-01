@@ -1,7 +1,0 @@
-{
-  "env": {
-    "MONGODB_USER": "nguyenthihuongly21",
-    "MONGODB_PASSWORD": "two5lgdyE3ZttmwD",
-    "MONGODB_DEFAULT_DATABASE": "posts"
-  }
-}
