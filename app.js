@@ -67,6 +67,8 @@ app.use(
   })
 );
 
+app.set("trust proxy", 1);
+
 const accessLogStream = fs.createWriteStream(
   path.join(__dirname, "access.log"), // store logging in this file
   { flags: "a" } // append new logging, not overwrite
