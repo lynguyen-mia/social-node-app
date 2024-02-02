@@ -56,6 +56,7 @@ const adminRoutes = require("./routes/admin");
 // const certificate = fs.readFileSync("server.cert");
 
 const app = express();
+app.set("trust proxy", 1);
 
 app.use(
   cors({
@@ -66,8 +67,6 @@ app.use(
     allowedHeaders: "Content-Type,Authorization"
   })
 );
-
-app.set("trust proxy", 1);
 
 const accessLogStream = fs.createWriteStream(
   path.join(__dirname, "access.log"), // store logging in this file
@@ -96,7 +95,7 @@ app.use(
     saveUninitialized: false,
     store: store,
     cookie: {
-      sameSite: "lax",
+      sameSite: "none",
       secure: true,
       maxAge: 1000 * 60 * 60
     }
