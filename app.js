@@ -60,8 +60,7 @@ app.set("trust proxy", 1);
 
 app.use(
   cors({
-    origin:
-      "https://velvety-meringue-2cfa3e.netlify.app",
+    origin: "https://velvety-meringue-2cfa3e.netlify.app",
     credentials: true,
     methods: ["GET, POST, PUT, DELETE, OPTIONS, HEAD"],
     allowedHeaders: "Content-Type,Authorization"
@@ -97,8 +96,7 @@ app.use(
     cookie: {
       sameSite: "none",
       secure: true,
-      maxAge: 1000 * 60 * 60,
-      partitioned: "partitioned"
+      maxAge: 1000 * 60 * 60
     }
   })
 );
