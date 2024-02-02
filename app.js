@@ -97,7 +97,8 @@ app.use(
     cookie: {
       sameSite: "none",
       secure: true,
-      maxAge: 1000 * 60 * 60
+      maxAge: 1000 * 60 * 60,
+      Partitioned
     }
   })
 );
